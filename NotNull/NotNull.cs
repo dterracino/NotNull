@@ -17,7 +17,7 @@ namespace NotNull
             {
                 if (_value == null)
                 {
-                    throw new NullReferenceException("Value is null");
+                    throw new NullGuardException("Value is null");
                 }
 
                 return _value;
@@ -26,7 +26,7 @@ namespace NotNull
             {
                 if (value == null)
                 {
-                    throw new NullReferenceException("Cannot assign null value.");
+                    throw new NullGuardException("Cannot assign null value.");
                 }
 
                 _value = value;

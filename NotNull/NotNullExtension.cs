@@ -13,7 +13,7 @@ namespace NotNull
         {
             if (@this == null)
             {
-                throw new NullReferenceException("Value cannot be null");
+                throw new NullGuardException("Value cannot be null");
             }
 
             return @this;
